@@ -20,53 +20,79 @@ The else clause in a try –except block is often underused but very useful for 
 ## 3.Raise Exception Error
 You can manually raise exceptions in python using the raise statement.
 This is useful when you want to signal that something went wrong-for example, when input is invalid or a condition isn’t met.
+
 **Syntax**
 
 			raise ExceptionType(“Error message”)
+			
 ## 4.Custom Exceptions
 A custom exception is a user –defined error type that you create by subclassing python’s built –in Exception class (or one of its subclasses). This lets you define specific, meaningful errors that make your code cleaner and easier.
+
 **Syntax**
 class MyCustomError (Exception)
 					pass
 raise MyCustomError(“Something went wrong”)
 
 ## 5.Common python Errors
+
 There are many common built in python Errors.
+
 **1. Syntax Error**
 Occurs when python can’t understand your code (bad syntax).
+
 Example: 
 				If true
 					Print(“Hello”)
 Fix: Add the colon:
+
  **2.Indendation Error**
+ 
 It happens when indentation is incorrect.
+
 Example:
 				def greet():
 					print(“Hello”)
 **3.NameError**
+
 Happens when you try to use a variable that doesn’t exist.
+
 Example:
-print(score)
+					print(score)
 
 **4.Type Error**
+
 Occurs when you use a function or operation on the wrong data type.
 
-print(“Age “ + 25)
+				print(“Age “ + 25)
 
 **5.Debugging**
+
 Debugging is the process of finding and fixing errors(bugs) in your code. Python provides several tools and techniques for debugging, ranging from simple print statements to advanced interactive debugging.
+
 **Common Debugging Techniques in python**
+
 **Print statement**
+
 Use print() to check variables values or flow of execution.
+
 **Using pdb (python Debugger)**
+
 Python’s built in interactive debugger. It allows you to pause execution, inspect variables, and step through code line by line.
+
 **Using IDE Debugger**
+
 Graphical debuggers that let you set break points, step through code, inspect variables, and more.
+
 **Using logging Modue**
+
 Instead of print(), use the logging for better  control over output(info, warning, error,etc.)
+
 **Writing Unit Test**
+
 Use unittest or pytest to test individual parts of your code and catch errors early.
+
 **Use asserts statements**
+
 Example:
 			assert x != 0, “x should not be zero”
 **Static Code Analysis Tool**
